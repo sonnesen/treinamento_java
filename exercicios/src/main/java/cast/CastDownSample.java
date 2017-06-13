@@ -1,7 +1,5 @@
 package cast;
 
-import encapsulamento.Pessoa;
-
 public class CastDownSample {
 
 	public static void main(String[] args) {
@@ -18,6 +16,6 @@ public class CastDownSample {
 		// cast down invalido de pesssoa para cliente
 		Cliente meuCliente = (Cliente) outraPessoa;
 		
-		System.out.println(meuCliente.getCpf());
+		System.out.println(meuCliente.getTipoCliente());
 	}
 }

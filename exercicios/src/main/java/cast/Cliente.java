@@ -1,25 +1,13 @@
 package cast;
 
-import encapsulamento.Pessoa;
+import enumeracoes.TipoClienteEnum;
 
 public class Cliente extends Pessoa {
 
-	public Cliente(String nome) {
-		super(nome);
-	}
+	private TipoClienteEnum tipoCliente;
 
-	public Cliente() {
-		// TODO Auto-generated constructor stub
-	}
-
-	private String cpf;
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	public TipoClienteEnum getTipoCliente() {
+		return tipoCliente;
 	}
 
 }

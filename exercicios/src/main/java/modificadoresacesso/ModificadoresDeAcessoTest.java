@@ -4,32 +4,13 @@ public class ModificadoresDeAcessoTest {
 
 	public static void main(String[] args) {
 		Funcionario funcionario = new Funcionario("Juca");
-		//funcionario.setNome("Juca");
+		
+		// Nao e possivel acessar o atributo nome
+		// funcionario.nome = "Juca";
+	
+		// Acessando o metodo publico getNome()
+		System.out.println(funcionario.getNome());
 	}
 
 }
 
-class Funcionario {
-	private String nome;
-	private String cpf;
-	
-	public Funcionario(String nome) {
-		this.nome = nome;
-		this.cpf = "";
-	}
-	
-	public String getNome() {
-		return nome;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public Funcionario(String nome, String cpf) {
-		this(nome);
-		this.cpf = cpf;
-	}
-	
-	
-}

@@ -1,12 +1,11 @@
 package cast;
 
-import encapsulamento.Pessoa;
-import heranca.Funcionario;
-
 public class InstanceOfSample {
 
 	public static void main(String[] args) {
-		Pessoa pessoa = new Funcionario();
+		Pessoa pessoa = new Pessoa();
+		// Pessoa pessoa = new Funcionario();
+		// Pessoa pessoa = new Cliente();
 		
 		if (pessoa instanceof Cliente) {
 			Cliente cliente = (Cliente) pessoa;

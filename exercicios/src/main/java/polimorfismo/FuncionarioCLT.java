@@ -1,6 +1,6 @@
 package polimorfismo;
 
-import heranca.Funcionario;
+import abstrato.Funcionario;
 
 public class FuncionarioCLT extends Funcionario {
 

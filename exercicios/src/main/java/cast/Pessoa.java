@@ -1,4 +1,4 @@
-package encapsulamento;
+package cast;
 
 public class Pessoa {
 	private String nome;
