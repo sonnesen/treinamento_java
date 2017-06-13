@@ -5,7 +5,7 @@ public class VariableScopeSample {
 	public static void main(String[] args) {
 		int valor1 = 1000;
 		
-		{ // bloco anônimo
+		{ // bloco anonimo
 			int valor2 = 100;
 			System.out.println(valor2);
 			valor2 += 100;
@@ -14,9 +14,9 @@ public class VariableScopeSample {
 			System.out.println(valor1);
 			valor1++;
 			System.out.println(valor1);
-		} // fim do bloco anônimo
+		} // fim do bloco anonimo
 		
-		/* //não compila 
+		/* //nao compila 
 		System.out.println(valor2);*/
 		
 		System.out.println(valor1);

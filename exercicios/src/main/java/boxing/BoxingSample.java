@@ -22,7 +22,7 @@ public class BoxingSample {
 		List<Integer> valores = new ArrayList<>();
 		valores.add(1);
 		valores.add(new Integer(10));
-		// valores.add(new Byte(10)); // não compila
+		// valores.add(new Byte(10)); // nao compila
 		
 		// Sem generics
 		List teste = new ArrayList();
