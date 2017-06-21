@@ -1,5 +1,11 @@
 package comparacao;
 
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.function.Consumer;
+
+import modificadoresacesso.Funcionario;
+
 //import java.util.Set;
 //import java.util.TreeSet;
 //
@@ -20,8 +26,28 @@ public class ComparableSample {
 //		funcionarios.add(funcionario3);
 //		funcionarios.add(funcionario4);
 //		funcionarios.add(funcionario5);
+		
+//        System.out.println(funcionarios);
+//              
+//      /*enhanced For*/		
+//		for (Funcionario funcionario : funcionarios) {
+//			System.out.println(funcionario);
+//		}
+//
+//      /*Interface Consumer*/		
+//		funcionarios.forEach(new Consumer<Funcionario>() {
+//
+//			@Override
+//			public void accept(Funcionario t) {
+//				System.out.println(t);
+//			}
+//		});
 //		
-//		System.out.println(funcionarios);
+//      /*Lambda expression*/		
+//		funcionarios.forEach(t -> System.out.println(t));
+//		
+//		/*Method reference*/
+//		funcionarios.forEach(System.out::println);
 	}
 
 }
