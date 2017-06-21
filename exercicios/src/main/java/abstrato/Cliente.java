@@ -8,7 +8,7 @@ public class Cliente extends Pessoa {
 	public static final int TIPO_CLIENTE_PJ = 2;
 
 	private TipoClienteEnum tipoCliente;
-	
+
 	public Cliente(String nome) {
 		super(nome);
 	}
@@ -16,11 +16,11 @@ public class Cliente extends Pessoa {
 	public Cliente() {
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public TipoClienteEnum getTipoCliente() {
 		return tipoCliente;
 	}
-	
+
 	public void setTipoCliente(TipoClienteEnum tipoCliente) {
 		this.tipoCliente = tipoCliente;
 	}
@@ -30,5 +30,13 @@ public class Cliente extends Pessoa {
 		System.out.println("CPF: " + super.getCpf() + "\nTipo: " + tipoCliente.getValor());
 
 	}
+
+//	@Override
+//	public String toString() {
+//		StringBuilder builder = new StringBuilder();
+//		builder.append("Cliente [tipoCliente=").append(tipoCliente).append(", getNome()=").append(getNome())
+//				.append(", getCpf()=").append(getCpf()).append("]");
+//		return builder.toString();
+//	}
 
 }
