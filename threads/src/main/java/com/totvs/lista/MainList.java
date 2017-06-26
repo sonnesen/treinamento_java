@@ -13,9 +13,10 @@ public class MainList {
 //		List<String> list = new Vector<>();
 		
 //		for (int i = 0; i < 10; i++) {
-//			new Thread(new MinhaTarefa(list, i)).start();
+//			new Thread(new AddElementTask(list, i)).start();
 //		}
 //		
+		
 //		Thread.sleep(2000);
 //		
 //		for (int i = 0; i < list.size(); i++) {
