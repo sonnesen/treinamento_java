@@ -1,33 +1,42 @@
 package com.totvs.threads;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
 public class CalculadoraApp {
 
-//	public static void main(String[] args) {
-//		new CalculadoraApp().init();
-//	}
-//
-//	private void init() {
-//		JFrame frame = new JFrame("Multiplicação lenta");
-//		
-//		JTextField field1 = new JTextField(10);
-//		JTextField field2 = new JTextField(10);
-//		JTextField field3 = new JTextField(10);
-//		
-//		field3.setEditable(false);
-//		
-//		JButton button = new JButton(" = ");
-//		JLabel label1 = new JLabel(" x ");
-//		
-//		button.addActionListener(new ActionListener() {
-//			
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				// maneira complicada e ineficiente de multiplicar dois números
-//				
-//				Runnable myTask = new MultiplicationTask(field1, field2, field3);
-//				Thread thread = new Thread(myTask, "Tarefa de multiplicação");
-//				thread.start();
-//				
+	public static void main(String[] args) {
+		new CalculadoraApp().init();
+	}
+
+	private void init() {
+		JFrame frame = new JFrame("Multiplicação lenta");
+		
+		JTextField field1 = new JTextField(10);
+		JTextField field2 = new JTextField(10);
+		JTextField field3 = new JTextField(10);
+		
+		field3.setEditable(false);
+		
+		JButton button = new JButton(" = ");
+		JLabel label1 = new JLabel(" x ");
+		
+		button.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// maneira complicada e ineficiente de multiplicar dois números
+				
+				Runnable myTask = new MultiplicationTask(field1, field2, field3);
+				Thread thread = new Thread(myTask, "Tarefa de multiplicação");
+				thread.start();
+				
 //				new Thread(new Runnable() {
 //					
 //					@Override
@@ -46,20 +55,20 @@ public class CalculadoraApp {
 //						field3.setText(result.toString());						
 //					}
 //				}).start();	
-//			}
-//		});
-//		
-//		JPanel panel = new JPanel();
-//		panel.add(field1);
-//		panel.add(label1);		
-//		panel.add(field2);
-//		panel.add(button);
-//		panel.add(field3);
-//		
-//		frame.add(panel);
-//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		frame.pack();
-//		frame.setVisible(true);
-//	}
-//
+			}
+		});
+		
+		JPanel panel = new JPanel();
+		panel.add(field1);
+		panel.add(label1);		
+		panel.add(field2);
+		panel.add(button);
+		panel.add(field3);
+		
+		frame.add(panel);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.pack();
+		frame.setVisible(true);
+	}
+
 }
